@@ -1,4 +1,5 @@
 #include "PluginProcessor.h"
+#include "PluginEditor.h"
 #include <cmath>
 
 MetalForgeProcessor::MetalForgeProcessor()
@@ -41,7 +42,7 @@ void MetalForgeProcessor::processBlock(juce::AudioBuffer<float>& buffer, juce::M
 
 juce::AudioProcessorEditor* MetalForgeProcessor::createEditor()
 {
-    return new juce::GenericAudioProcessorEditor(*this);
+    return new MetalForgeEditor(*this);
 }
 
 void MetalForgeProcessor::getStateInformation(juce::MemoryBlock& dest)
