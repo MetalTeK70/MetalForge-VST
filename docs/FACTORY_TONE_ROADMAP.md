@@ -30,3 +30,13 @@ Create or properly license every bundled IR, sample, and graphic. Do not distrib
 
 ## Status
 Planning specification only. Counts and library size remain flexible; none of the proposed presets, amps, or IRs should be represented as implemented until tested.
+
+## Non-negotiable quality gates
+- Prioritize fidelity and responsiveness over preset count, download size, or visual polish.
+- Document the reference era, recording, known rig elements, and uncertainty for each artist-inspired preset.
+- Validate amp response at multiple input levels and pickup types; use oversampling and anti-aliasing where needed.
+- Compare against legally obtained reference recordings at matched perceived loudness; evaluate transient response, spectral balance, noise, and playing feel.
+- Verify cabinet IR provenance, phase, sample-rate handling, and licensing.
+- Test in Cakewalk with Scarlett 2i2 Gen 3 for latency, clipping, stereo/mono behavior, and CPU stability.
+- Mark tones as approximations where recording-chain details are unknown; never claim bit-identical recreation.
+- Release only presets that pass listening and technical QA.
