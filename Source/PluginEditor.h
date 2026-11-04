@@ -7,8 +7,8 @@ public:
  void resized() override;
 private:
  MetalForgeProcessor& processor;
- juce::Slider gain, tone, output;
- juce::Label gainLabel, toneLabel, outputLabel;
- std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> gainAttachment, toneAttachment, outputAttachment;
+ juce::Slider drive, mix, output;
+ juce::Label driveLabel, mixLabel, outputLabel;
+ std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> driveAttachment, mixAttachment, outputAttachment;
  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MetalForgeEditor)
 };
